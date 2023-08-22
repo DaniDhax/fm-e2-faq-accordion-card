@@ -1,0 +1,12 @@
+ .question {
+    cursor: pointer;
+  }
+  
+  .icon-arrow {
+    margin-left: 20px;
+  }
+  
+  .answer-content {
+    display: none;
+  }
+  
