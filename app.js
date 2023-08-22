@@ -90,10 +90,7 @@ const questionContents = questionsData.map((data) => {
   questionContent.appendChild(answerContent);
 
   questionContent.appendChild(breakLine);
-  breakLine.style.height = '0.5px';
-  breakLine.style.width = '100%';
-  breakLine.style.backgroundColor = 'var(--dark-grayish-blue)';
-  breakLine.style.marginTop =  '15px'
+  breakLine.classList.add("break-line");
 
   // Agrega el evento 'click' para mostrar/ocultar detalles y cambiar la negrita
   question.addEventListener("click", () =>
