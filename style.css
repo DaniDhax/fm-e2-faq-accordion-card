@@ -144,11 +144,17 @@ h1 {
     transform: translateX(-330px);
   }
 
+  .imagen-box {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 55px;
+  }
+
   .imagen-box img {
-    display: block;
-    width: 140px;
-    position: fixed ;
-    top: 292px;
-    left: -2px;
+    display: inline;
+    position: relative;
+    height: 130px;
+    transform: translateX(-475px);
+    top: 157px;
   }
 }
