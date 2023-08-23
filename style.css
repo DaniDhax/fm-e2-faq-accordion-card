@@ -39,20 +39,15 @@ body {
   background-position: center top;
 }
 
-
-
-img {
-    height: 170px;
-    width: auto;
-    position: absolute;
-    transform: translateY(-100px);
+.imagen {
+  position: absolute;
+  width: 220px;
+  transform: translateY(-100px);
 }
 
-
 .container {
-  border: 1px solid black;
   border-radius: 20px;
-  width: 325px;
+  width: 290px;
   height: 75%;
   margin-top: 75px;
   background-color: white;
@@ -63,7 +58,7 @@ img {
 }
 
 .questions-container {
-  width: 90%;
+  width: 270px;
 }
 
 h1 {
@@ -83,8 +78,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.2rem;
-  /* margin: 0 10px; */
+  font-size: 1.15rem;
+  padding: 4px 0;
+}
+
+.question:hover {
+  color: var(--soft-red);
 }
 
 .icon-arrow {
@@ -95,13 +94,61 @@ h1 {
   display: none;
   width: 90%;
   margin-left: 0px;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--dark-grayish-blue);
 }
 
 .break-line {
-    height: 0.1px;
-    width: 100%;
-    background-color: hsla(237, 12%, 33%, 0.2);
-    margin-top: 10px;
+  height: 0.1px;
+  width: 100%;
+  background-color: hsla(237, 12%, 33%, 0.2);
+  margin-top: 10px;
+}
+
+.imagen-box img {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    margin-top: 0;
+    width: 900px;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .questions-container {
+    width: 360px;
+    align-self: flex-end;
+    margin-right: 75px;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-right: 365px;
+    align-self: flex-end;
+  }
+
+  .imagen {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 55px;
+    transform: scale(1.2);
+  }
+
+  .imagen img {
+    content: url(./images/illustration-woman-online-desktop.svg);
+    display: inline;
+    position: absolute;
+    height: 300px;
+    transform: translateX(-330px);
+  }
+
+  .imagen-box img {
+    display: block;
+    width: 140px;
+    position: fixed ;
+    top: 292px;
+    left: -2px;
+  }
 }

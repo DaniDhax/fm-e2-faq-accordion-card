@@ -122,4 +122,4 @@ function toggleDetails(question, questionText) {
   }
 }
 
-// answerContent.style.margin = '0 10px';
+
